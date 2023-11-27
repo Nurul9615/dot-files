@@ -34,3 +34,8 @@ If using starship with homebrew on MacOS, paste this at the bottom of .zshrc
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
+
+```
+### NeovimChad
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+```
