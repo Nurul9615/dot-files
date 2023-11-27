@@ -24,6 +24,9 @@ brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
 
+If using starship with homebrew on MacOS, paste this at the bottom of .zshrc
+```eval "$(/Users/nurul.amin/homebrew/Cellar/starship/1.16.0/bin/starship init zsh)"```
+
 ## Other Tools
 
 ```
