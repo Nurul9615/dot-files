@@ -1,0 +1,15 @@
+Install Dependencies
+Build Package
+Unit Test
+Code Analysis - Commitlint, Docker Lint, Maven Lint, OpenAPI Validation, Shell Check, Yaml Lint
+Code Quality (Gitlab)
+Docker Build
+Integration Test
+Security Static Analysis - Clair Container Scan, Container Scanning (Gitlab GTCS), Sonarqube, Mutation Testing (Maven), Trufflehog, Virus Scan (Clamav)
+Security Dynamic Analysis - Api Fuzzer (Gitlab), DAST Scan (Gitlab)
+Container Image Test - SAST (Clair), Trivy
+Release Tag
+Pre Deploy - Kubescore
+Deploy
+Smoke Test
+Post - Kics-IAC-Sast (Gitlab), NodeJS SAST (Gitlab), Secret Detection (Gitlab), Semgrep SAST (Gitlab)
