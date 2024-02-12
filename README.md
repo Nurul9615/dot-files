@@ -20,6 +20,7 @@ cd nerd-fonts
 ./install.sh Hack
 
 # Nerd Fonts - Hack font (via homebrew)
+mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
 brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font
 ```
