@@ -7,6 +7,8 @@ compinit
 
 export ZSH="$HOME/.oh-my-zsh"
 
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
 plugins=(git zsh-z zsh-autosuggestions zsh-syntax-highlighting)
 
 source <(kubectl completion zsh)
@@ -17,7 +19,6 @@ export PATH=/Users/nurul.amin/homebrew/opt/tmux/bin:$PATH
 export PATH=/Users/nurul.amin/homebrew/bin:$PATH
 export PATH=/Users/nurul.amin/.config/tmux/nvim-macos/bin:$PATH
 
-alias vi=nvim
 alias k=kubectl
 alias h=helm
 alias t=terraform
