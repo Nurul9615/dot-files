@@ -1,10 +1,10 @@
-Install Dependencies
-Build Package
-Unit Test
+Install Dependencies (E.g Maven Compile)
+Build Package (E.g. Maven Package)
+Unit Test (E.g. Maven Test)
 Code Analysis - Commitlint, Docker Lint, Maven Lint, OpenAPI Validation, Shell Check, Yaml Lint
 Code Quality (Gitlab)
 Docker Build
-Integration Test
+Integration Test (Maven Verify)
 Security Static Analysis - Clair Container Scan, Container Scanning (Gitlab GTCS), Sonarqube, Mutation Testing (Maven), Trufflehog, Virus Scan (Clamav)
 Security Dynamic Analysis - Api Fuzzer (Gitlab), DAST Scan (Gitlab)
 Container Image Test - SAST (Clair), Trivy
