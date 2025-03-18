@@ -1,20 +1,40 @@
 add_newline = true
 
-format = """$directory$character"""
+format = """$directory$git_branch$all$fill$line_break$character"""
 palette = "catppuccin_mocha"
-right_format = """$all"""
+#right_format = """$time"""
 command_timeout = 1000
 
-[cmd_duration]
-min_time = 5000
-format = 'underwent [$duration](bold yellow)'
+[fill]
+symbol = ' '
+
+#[cmd_duration]
+#min_time = 5000
+#format = 'underwent [$duration](bold yellow)'
+
+[directory]
+truncation_length = 8
+truncation_symbol = '…/'
+format = '[$path ]($style)'
+
+[time]
+disabled = false 
+format = '[\[ $time \]]($style) '
+time_format = '%T'
+time_range = '10:00:00-14:00:00'
+
+[package]
+disabled = false
+symbol = '󰏗 '
 
 [character]
 vicmd_symbol = "[N] >>>"
 success_symbol = '[➜](bold green)'
 
 [git_branch]
-ignore_branches = ['master', 'main']
+style = 'fg:green'
+symbol = ' '
+format = '(white) [$symbol$branch ]($style)'
 
 [git_status]
 conflicted = '🏳'
@@ -31,19 +51,19 @@ deleted = '🗑'
 disabled = false
 
 [aws]
-format = '[$symbol(profile: "$profile" )(\(region: $region\) )]($style)'
-disabled = false
-style = 'bold blue'
-symbol = " "
+format = '[ $symbol(profile: "$profile" )(\(region: $region\) )]($style)'
+style = 'yellow'
+symbol = " "
 
-# [kubernetes]
-# symbol = '☸ '
-# disabled = true
-# detect_files = ['Dockerfile']
-# format = '[$symbol$context( \($namespace\))]($style) '
-# contexts = [
-#   { context_pattern = "arn:aws:eks:us-west-2:577926974532:cluster/zd-pvc-omer", style = "green", context_alias = "omerxx", symbol = " " },
-# ]
+[kubernetes]
+symbol = '☸ '
+disabled = true
+detect_files = ['Dockerfile']
+format = '[$symbol$context( \($namespace\))]($style) '
+
+[python]
+symbol = '👾 '
+pyenv_version_name = true
 
 [docker_context]
 disabled = true
