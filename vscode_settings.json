@@ -3,29 +3,26 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform"
   },
-  "breadcrumbs.enabled": false,
-  "catppuccin.accentColor": "teal",
-  "cSpell.userWords": ["DATAVAULT", "gcloud", "liquibase", "PREPROD"],
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
   "editor.minimap.autohide": true,
   "editor.minimap.enabled": false,
   "editor.semanticHighlighting.enabled": true,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "files.autoSave": "onWindowChange",
-  "git.autofetch": true,
+  "git.autofetch": false,
   "gitlens.codeLens.enabled": false,
   "gopls": {
     "ui.semanticTokens": true
@@ -47,10 +44,7 @@
     "Command Prompt": {
       "args": [],
       "icon": "terminal-cmd",
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
-      ]
+      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"]
     },
     "Git Bash": {
       "source": "Git Bash"
@@ -62,14 +56,8 @@
   },
   "terminal.integrated.scrollback": 5000,
   "terminal.integrated.tabs.defaultColor": "terminal.ansiGreen",
-  "vs-kubernetes": {
-    "vscode-kubernetes.helm-path-windows": "C:\\Users\\nnamin\\.vs-kubernetes\\tools\\helm\\windows-amd64\\helm.exe",
-    "vscode-kubernetes.minikube-path-windows": "C:\\Users\\nnamin\\.vs-kubernetes\\tools\\minikube\\windows-amd64\\minikube.exe"
-  },
   "window.commandCenter": false,
   "window.titleBarStyle": "custom",
-  "workbench.activityBar.location": "hidden",
-  "workbench.colorTheme": "Catppuccin Frappé",
   "workbench.editor.empty.hint": "hidden",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
@@ -89,9 +77,28 @@
   "[hosts]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-  "workbench.statusBar.visible": false,
-  "window.menuBarVisibility": "compact",
-  "gitlab.aiAssistedCodeSuggestions.enabled": true,
-  "gitlab.aiAssistedCodeSuggestions.preferredAccount": "Nurul1596",
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "emmet.includeLanguages": { "jinja-html": "html", "django-html": "html" },
+  "material-icon-theme.languages.associations": {
+    "jinja-html": "html"
+  },
+  "files.associations": {
+    "*.html": "jinja-html"
+  },
+  "files.autoSave": "afterDelay",
+  "prettier.printWidth": 125,
+  "gitlab.duoCodeSuggestions.enabled": true,
+  "gitlab.duoCodeSuggestions.preferredAccount": "Nurul1596",
+  "workbench.colorTheme": "Default Dark+",
+  "gitlens.graph.minimap.enabled": false,
+  "aws.telemetry": false,
+  "terminal.external.osxExec": "iTerm.app",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "python.locator": "js",
+  "docker.extension.enableComposeLanguageServer": false
 }

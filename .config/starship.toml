@@ -18,10 +18,13 @@ truncation_symbol = '…/'
 format = '[$path ]($style)'
 
 [time]
-disabled = false 
+disabled = false
 format = '[\[ $time \]]($style) '
 time_format = '%T'
 time_range = '10:00:00-14:00:00'
+
+[java]
+disabled = true
 
 [package]
 disabled = false
@@ -54,6 +57,12 @@ disabled = false
 format = '[ $symbol(profile: "$profile" )(\(region: $region\) )]($style)'
 style = 'yellow'
 symbol = " "
+
+[azure]
+disabled = true
+
+[gcloud]
+disabled = true
 
 [kubernetes]
 symbol = '☸ '
